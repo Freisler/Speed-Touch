@@ -6,7 +6,7 @@ Hra na postřeh a rychlost prstů hráče.
  - Hra končí v případě naklikání všech čísel - tehdy se zobrazí výsledný čas hry
  - Hlavní menu s možnostmi "Nová hra", "Skóre", "Konec"
  - Využití Storage pro JSON data - "Jméno hráče" : "Skóre"
- - Aktivita Login, ve které je možno napsat přezdívku,
+ - Aktivita Login, ve které je možno napsat přezdívku
  - Ošetření kratší přezdívky než 3 znaky
  - Odhlášení hráče a hra pod jinou přezdívkou
 
