@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/back1"
+    tools:context=".Game">
+
+    <TextView
+        android:id="@+id/timerValue"
+        android:layout_width="wrap_content"
+        android:layout_height="150px"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:text="0:00.000"
+        android:textColor="#FFFFFF"
+        android:textSize="100px" />
+
+
+    <com.example.rzr.fre0025_tamz2_projekt.GameView
+        android:id="@+id/gameView"
+        android:layout_width="match_parent"
+        android:layout_height="355dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/timerValue"
+        android:layout_marginTop="17dp" />
+
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/gameView"
+        android:text="START" />
+
+    <ImageView
+        android:id="@+id/coverImg"
+        android:layout_width="match_parent"
+        android:layout_height="355dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/gameView"
+        android:src="@drawable/wp" />
+
+    <TextView
+        android:id="@+id/winnerIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/gameView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="87dp"
+        android:text="Vyhrál jsi v čase: "
+        android:textColor="@android:color/white"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/winnerTime"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="0:0.000"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="50sp" />
+
+    <Button
+        android:id="@+id/btnBackToMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="11dp"
+        android:text="Zpět do menu " />
+
+    <Button
+        android:id="@+id/btnSaveGame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/winnerTime"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:text="Uložit čas" />
+
+
+</RelativeLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootRL"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.rzr.fre0025_tamz2_projekt.Login"
+    android:background="@drawable/back1">
+
+
+    <TextView
+        android:id="@+id/menuLabel1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/menuNewNick"
+        android:layout_centerHorizontal="true"
+        android:text="Zadej přezdívku:"
+        android:textColor="@android:color/white" />
+
+    <EditText
+        android:id="@+id/menuNewNick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/menuButton1"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/menuButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="110dp"
+        android:text="Vytvořit" />
+
+    <EditText
+        android:id="@+id/menuExistingNick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/menuButton2"
+        android:layout_alignStart="@+id/menuNewNick"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/menuButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="88dp"
+        android:text="Pokračovat"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/menuExistingNick"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="51dp"
+        android:text="nebo pokračuj jako hráč:"
+        android:textColor="@android:color/white" />
+
+
+</RelativeLayout>
