@@ -10,3 +10,4 @@ Hra na postřeh a rychlost prstů hráče.
  - Ošetření kratší přezdívky než 3 znaky
  - Odhlášení hráče a hra pod jinou přezdívkou
 
+Hra je momentálně zhruba z 90% hotová, odpoledne nahraji finální verzi
