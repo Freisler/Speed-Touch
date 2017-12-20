@@ -102,11 +102,9 @@ public class GameView extends View {
     }
 
     void init(Context context) {
-        bmp = new Bitmap[4];
+        bmp = new Bitmap[2];
         bmp[0] = BitmapFactory.decodeResource(getResources(), R.drawable.square1);
-        bmp[1] = BitmapFactory.decodeResource(getResources(), R.drawable.success);
-        bmp[2] = BitmapFactory.decodeResource(getResources(), R.drawable.fail);
-        bmp[3] = BitmapFactory.decodeResource(getResources(), R.drawable.empty);
+        bmp[1] = BitmapFactory.decodeResource(getResources(), R.drawable.empty);
         generateNumbers();
 
 
@@ -124,7 +122,7 @@ public class GameView extends View {
             }
             case MotionEvent.ACTION_UP:{
                 if(wasSuccess){
-                    levelInt[lastBoxNumber] = 3;
+                    levelInt[lastBoxNumber] = 1;
                 }
                 checkIfWin();
 
@@ -203,7 +201,7 @@ public class GameView extends View {
             lastBoxNumber = boxNumber;
             Game.noSound.start();
         }
-        if(progress == 1) {
+        if(progress == 25) {
             progress = 0;
             next = 1;
             Game.timeSwapBuff += Game.timeInMS;

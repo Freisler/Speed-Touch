@@ -145,7 +145,10 @@ public class Game extends Activity{
                 //Toast.makeText(getBaseContext(),getExternalFilesDir(null),Toast.LENGTH_SHORT).show();
 
                 String FILENAME = "speedtouch_scoreboard";
-                String stringToSave = nick+" - "+mins+":"+secs+"."+milisecs;
+                if(secs < 10){
+                    secs = '0' + secs;
+                }
+                String stringToSave = mins+":"+secs+"."+milisecs+" - "+nick;
 
                 try {
                     //open file for writing

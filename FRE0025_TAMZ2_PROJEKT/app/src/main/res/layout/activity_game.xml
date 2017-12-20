@@ -40,10 +40,10 @@
 
     <ImageView
         android:id="@+id/coverImg"
-        android:layout_width="match_parent"
-        android:layout_height="355dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignTop="@+id/gameView"
+        android:layout_width="wrap_content"
+        android:layout_height="385dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/timerValue"
         android:src="@drawable/wp" />
 
     <TextView

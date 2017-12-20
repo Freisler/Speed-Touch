@@ -48,6 +48,7 @@ public class MainMenu extends Activity{
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(getApplicationContext(),Score.class);
+                i.putExtra("nick",nick);
                 finish();
                 startActivity(i);
             }
