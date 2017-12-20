@@ -42,7 +42,7 @@ public class Score extends Activity {
         backToMenu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(getApplicationContext(),MainMenu.class);
+                Intent i = new Intent(getBaseContext(),MainMenu.class);
                 finish();
                 i.putExtra("nick",nick);
                 startActivity(i);

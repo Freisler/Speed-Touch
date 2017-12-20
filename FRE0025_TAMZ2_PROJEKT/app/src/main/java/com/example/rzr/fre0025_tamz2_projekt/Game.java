@@ -131,9 +131,6 @@ public class Game extends Activity{
                 win = false;
                 Intent i = new Intent(getApplicationContext(),MainMenu.class);
                 i.putExtra("nick",nick);
-                //i.putExtra("mins",mins);
-                //i.putExtra("secs",secs);
-                //i.putExtra("milisecs",milisecs);
                 finish();
                 startActivity(i);
             }
@@ -143,7 +140,6 @@ public class Game extends Activity{
             @Override
             public void onClick(View view) {
                 //Toast.makeText(getBaseContext(),getExternalFilesDir(null),Toast.LENGTH_SHORT).show();
-
                 String FILENAME = "speedtouch_scoreboard";
                 if(secs < 10){
                     secs = '0' + secs;
@@ -153,20 +149,11 @@ public class Game extends Activity{
                 try {
                     //open file for writing
                     OutputStreamWriter out = new OutputStreamWriter(openFileOutput("save.txt", MODE_APPEND));
-
-
                     //write information to file
                     out.write(stringToSave);
                     out.write('\n');
-
                     //close file
                     out.close();
-                    //Toast.makeText(getApplicationContext(),"Text Saved",Toast.LENGTH_LONG).show();
-
-
-
-
-
                 } catch (java.io.IOException e) {
                     //if caught
                     //Toast.makeText(getApplicationContext(), "Text Could not be added",Toast.LENGTH_LONG).show();
@@ -177,9 +164,8 @@ public class Game extends Activity{
                 i.putExtra("mins",mins);
                 i.putExtra("secs",secs);
                 i.putExtra("milisecs",milisecs);
-                //Toast.makeText(getApplicationContext(),nick+" - "+mins+":"+secs+"."+milisecs,Toast.LENGTH_SHORT).show();
+                finish();
                 startActivity(i);
-
             }
         });
 
